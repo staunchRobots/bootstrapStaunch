@@ -45,30 +45,33 @@
     Footer
     \==================================================
   %footer.footer
-    %p.pull-right
-      %a{:href => "#"} Back to top
-    %p
-      Designed and built with all the love in the world
-      %a{:href => "http://twitter.com/twitter", :target => "_blank"} @twitter
-      by
-      %a{:href => "http://twitter.com/mdo", :target => "_blank"} @mdo
-      and
-      = succeed "." do
-        %a{:href => "http://twitter.com/fat", :target => "_blank"} @fat
-    %p
-      Code licensed under the
-      = succeed "." do
-        %a{:href => "http://www.apache.org/licenses/LICENSE-2.0", :target => "_blank"} Apache License v2.0
-      Documentation licensed under
-      = succeed "." do
-        %a{:href => "http://creativecommons.org/licenses/by/3.0/"} CC BY 3.0
-    %p
-      Icons from
-      = succeed "," do
-        %a{:href => "http://glyphicons.com"} Glyphicons Free
-      licensed under
-      = succeed "." do
-        %a{:href => "http://creativecommons.org/licenses/by/3.0/"} CC BY 3.0
+    .logo
+      =image_tag "stauncher.png", :size => "100x100"
+    .desc
+      %p.pull-right
+        %a{:href => "#"} Back to top
+      %p
+        Designed and built with all the love in the world
+        %a{:href => "http://twitter.com/twitter", :target => "_blank"} @twitter
+        by
+        %a{:href => "http://twitter.com/mdo", :target => "_blank"} @mdo
+        and
+        = succeed "." do
+          %a{:href => "http://twitter.com/fat", :target => "_blank"} @fat
+      %p
+        Code licensed under the
+        = succeed "." do
+          %a{:href => "http://www.apache.org/licenses/LICENSE-2.0", :target => "_blank"} Apache License v2.0
+        Documentation licensed under
+        = succeed "." do
+          %a{:href => "http://creativecommons.org/licenses/by/3.0/"} CC BY 3.0
+      %p
+        Icons from
+        = succeed "," do
+          %a{:href => "http://glyphicons.com"} Glyphicons Free
+        licensed under
+        = succeed "." do
+          %a{:href => "http://creativecommons.org/licenses/by/3.0/"} CC BY 3.0
       
 :javascript
   $(document).ready(function(){
