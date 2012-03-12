@@ -3,12 +3,8 @@
     %h1 StaunchRobots, Web Developers for Hire
     %p.desc We are a web services company specializing in server side MVC technologies to xxxxxxxxx consulting companies.
     %p.download-info
-      %a.btn.btn-large.view_code{:href => "https://github.com/twitter/bootstrap/"} 
-        View our Code
-        %br
-        %span
-          on github
-      %a.btn.btn-large.contact_btn{:href => "assets/bootstrap.zip"} Contact Us
+      %a.btn.btn-large.view_code{:href => "https://github.com/staunchRobots"} View our Code on github
+      %a.btn.btn-large.btn-primary.contact_btn{:href => "#"} Contact Us
 
 %hr.soften
   .marketing
@@ -26,9 +22,12 @@
         %h2 Reliable + Talented
         %p Reliability and talent are the two wings of the bird that is staunchRobots :)  We only work with experience developers in the top of their field, and have 0 tolerance for flakiness. We vet out talented developers on internal projects, about 1/3 prove to be reliable, and we offer those to clients.
     .soften
-      %h1 Latest Stauch Contrapoints.
+      %h1 Latest Staunch Contraptions.
       %p.marketing-byline
-        For more examples contact us at inquiry@staunchrobots.com and we can send you more examples
+        For more examples contact us at 
+        %span
+          inquiry@staunchrobots.com 
+        and we can send you more examples
       %ul.thumbnails.example-sites
         %li.span4
           %a.thumbnail{:href => "http://kippt.com/", :target => "_blank"}
@@ -70,3 +69,16 @@
       licensed under
       = succeed "." do
         %a{:href => "http://creativecommons.org/licenses/by/3.0/"} CC BY 3.0
+      
+:javascript
+  $(document).ready(function(){
+    $(".contact_btn").click(function(){
+      $("#myModal").modal("show");
+      return false;
+    });
+
+    $("#myModal .close-btn").click(function(){
+      $("#myModal").modal("hide");
+      return false
+    })
+  });

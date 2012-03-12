@@ -3,9 +3,16 @@
     .desc {font-size: 20px; }
     .download-info {text-align: center; margin-top: 30px;}
     .btn {font-size: 25px;
-      span {font-size: 14px !important;}}
-    .view_code {margin-right: 60px;}
-    .contact_btn {padding: 23px 10px;}
+          font-size: 20px;
+          font-weight: normal;
+          padding: 14px 24px;
+          margin-right: 10px;
+          -webkit-border-radius: 6px;
+          -moz-border-radius: 6px;
+          border-radius: 6px;
+      }
+    .view_code {margin-right: 30px;}
+
 }
 .soften {text-align: center;
   h1 {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 300; margin-bottom: 20px;}
@@ -16,4 +23,6 @@
   .row {margin-top: 20px; margin-bottom: 30px;
     h2 {display: inline;}
   }
+  .marketing-byline {color: #08c}
+  .example-sites {margin-top: 30px;}
 }

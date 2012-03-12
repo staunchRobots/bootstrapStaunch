@@ -6,4 +6,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap.min
 //= require_tree .
+$(document).ready(function(){
+  $("a.close").click(function(){
+    $("#myModal").modal("hide");
+  });
+});
