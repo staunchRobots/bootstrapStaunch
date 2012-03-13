@@ -31,3 +31,29 @@
   .logo {float: left}
   .desc {float:left}
 }
+
+
+#services { 
+  #ror {padding-top: 180px;}
+  .service {padding: 10px; padding-top: 30px;
+    h2 {border-bottom: 1px solid #b4b4b4; padding-top: 10px; padding-bottom: 10px; margin-bottom: 10px; font-size: 30px;}
+  }
+}
+#services-title {position:fixed;
+                top:40px;
+                right:0;
+                left:0;
+                z-index:1040;
+                background-color: white;
+              .jumbotron {font-size: 50px; 
+                          text-align: center; 
+                          margin-top: 40px; 
+                          margin-bottom: 15px;}
+              .services_desc {font-weight: 300; 
+                              font-size: 20px; 
+                              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                              text-align: center}
+              #services_nav {margin-top: 30px; 
+                            margin-bottom: 30px;
+                            margin-left: 100px;}
+}
