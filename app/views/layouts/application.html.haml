@@ -27,15 +27,16 @@
             %span.icon-bar
           .nav-collapse
             %ul.nav
-              %li.active
-                %a{:href => "#"} Home
-              %li
+              %li{:class => "#{params[:action] == "index" ? "active" : ""}"}
+                %a{:href => "/"} Home
+              %li{:class => "#{params[:action] == "services" ? "active" : ""}"}
                 %a{:href => "/services"} Services
+              %li{:class => "#{params[:action] == "internal_projects" ? "active" : ""}"}
+                %a{:href => "/internal_projects"} Internal Projects
               %li
-                %a{:href => "#contact"} Internal Projects
-              %li
-                %a{:href => "#contact"} Contact
+                %a.contact_btn{:href => "#"} Contact Us
           / /.nav-collapse
+
     .container
       = yield
       %hr

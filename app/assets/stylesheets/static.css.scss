@@ -143,4 +143,10 @@
             border-radius: 0;
   }
 
-
+.internal {
+  h2 {border-bottom: 1px solid #b4b4b4; padding-top: 10px; padding-bottom: 10px; margin-bottom: 10px; font-size: 30px;}
+  .desc {
+  p {font-size: 16px;
+    a {color: red;}
+  }
+}}

@@ -3,6 +3,8 @@ Stauchrobots::Application.routes.draw do
   # first created -> highest priority.
   root :to => 'static#index'
   match "/services" => "static#services", :as => "services"
+  match "/internal_projects" => "static#internal_projects", :as => "internal_projects"
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

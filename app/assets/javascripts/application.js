@@ -12,4 +12,9 @@ $(document).ready(function(){
   $("a.close").click(function(){
     $("#myModal").modal("hide");
   });
+
+ $(".contact_btn").click(function(){
+    $("#myModal").modal("show");
+    return false;
+ }); 
 });
