@@ -129,10 +129,30 @@
 
     $("#services_nav a").click(function(){
       element = $(this).attr("href");
-      var top = $(element).offset().top - 220
+      var top = $(element).offset().top - 80
       console.log(top);
       $(document).scrollTop(top);
       return false
     });
+
+    // fix sub nav on scroll
+    var $win = $(window)
+      , $nav = $('.subnav')
+      , navTop = $('.subnav').length && $('.subnav').offset().top - 40
+      , isFixed = 0
+
+    processScroll()
+
+    $win.on('scroll', processScroll)
+
+    function processScroll() {
+      var i, scrollTop = $win.scrollTop()
+      if (scrollTop >= navTop && !isFixed) {
+        isFixed = 1
+        $nav.addClass('subnav-fixed')
+      } else if (scrollTop <= navTop && isFixed) {
+        isFixed = 0
+        $nav.removeClass('subnav-fixed')
+      }
+    }
   });
-  
