@@ -150,3 +150,18 @@
     a {color: red;}
   }
 }}
+
+#rails_accordion {
+  .accordion-heading {
+    p {color: #08C; margin-bottom: 0px;}
+  }
+  li a {color: black;}
+  li a:hover {color: #08C; text-decoration: none;}
+}
+
+#front_accordion {
+  .accordion-heading {
+    p {color: #08C; margin-bottom: 0px;}
+  }
+}
+

@@ -12,88 +12,98 @@
 #services
   #ror.service.row
     %h2 Ruby on Rails
-    .span4
+    .span5
       %h4 Code Sample
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui felis, fermentum et ornare eget, malesuada sed lacus. Maecenas faucibus metus nec elit lobortis eleifend molestie justo eleifend.
+      = raw(draw_code("ruby.rb"))
+      %br/
       = link_to "View code on Github", "#", :class => "btn"
-    .span7
+    .span6
       %p We can build custom apps lightening quick in ROR. We are working on an internal opensource app called plist that demos some of our skills - https://github.com/staunchRobots/plist
       %p We listen to and are inspired by
-      %ul
-        %li 
-          %strong Agregators:
-        %li
-          %a{:href => "http://www.readwriteweb.com/hack/", :target => "_blank"}
-          %a{:href => "http://www.readwriteweb.com/hack/"}
-          %a{:href => "http://www.readwriteweb.com/hack/"} http://www.readwriteweb.com/hack/
-        %li
-          %a{:href => "http://www.rubyflow.com/", :target => "_blank"}
-          %a{:href => "http://www.rubyflow.com/"}
-          %a{:href => "http://www.rubyflow.com/"} http://www.rubyflow.com/
-        %li
-          %a{:href => "http://www.reddit.com/r/ruby/", :target => "_blank"}
-          %a{:href => "http://www.reddit.com/r/ruby/"}
-          %a{:href => "http://www.reddit.com/r/ruby/"} http://www.reddit.com/r/ruby/
-        %li
-          %a{:href => "http://c5nn.carbonfive.com/", :target => "_blank"}
-          %a{:href => "http://c5nn.carbonfive.com/"}
-          %a{:href => "http://c5nn.carbonfive.com/"} http://c5nn.carbonfive.com/
-        %li
-          %strong Blogs:
-        %li
-          %a{:href => "http://blog.carbonfive.com/", :target => "_blank"}
-          %a{:href => "http://blog.carbonfive.com/"}
-          %a{:href => "http://blog.carbonfive.com/"} http://blog.carbonfive.com/
-        %li
-          %a{:href => "http://avdi.org/devblog/", :target => "_blank"}
-          %a{:href => "http://avdi.org/devblog/"}
-          %a{:href => "http://avdi.org/devblog/"} http://avdi.org/devblog/
-        %li
-          %a{:href => "http://yehudakatz.com/", :target => "_blank"}
-          %a{:href => "http://yehudakatz.com/"}
-          %a{:href => "http://yehudakatz.com/"} http://yehudakatz.com/
-        %li
-          %a{:href => "http://www.igvita.com/", :target => "_blank"}
-          %a{:href => "http://www.igvita.com/"}
-          %a{:href => "http://www.igvita.com/"}
-            http://www.igvita.com/
-            %span{:style => "color: black;"} (ftw !!!)
-        %li
-          %a{:href => "http://blog.hasmanythrough.com/", :target => "_blank"}
-          %a{:href => "http://blog.hasmanythrough.com/"}
-          %a{:href => "http://blog.hasmanythrough.com/"} http://blog.hasmanythrough.com/
-        %li
-          %a{:href => "http://www.engineyard.com/blog/", :target => "_blank"}
-          %a{:href => "http://www.engineyard.com/blog/"}
-          %a{:href => "http://www.engineyard.com/blog/"} http://www.engineyard.com/blog/
-        %li
-          %a{:href => "http://robots.thoughtbot.com/", :target => "_blank"}
-          %a{:href => "http://robots.thoughtbot.com/"}
-          %a{:href => "http://robots.thoughtbot.com/"} http://robots.thoughtbot.com/
-        %li
-          %a{:href => "https://github.com/blog", :target => "_blank"}
-          %a{:href => "https://github.com/blog"}
-          %a{:href => "https://github.com/blog"} https://github.com/blog
-        %li
-          %a{:href => "https://makandracards.com/makandra", :target => "_blank"}
-          %a{:href => "https://makandracards.com/makandra"}
-          %a{:href => "https://makandracards.com/makandra"} https://makandracards.com/makandra
-        %li
-          %a{:href => "http://thechangelog.com/", :target => "_blank"}
-          %a{:href => "http://thechangelog.com/"}
-          %a{:href => "http://thechangelog.com/"} http://thechangelog.com/
-        %li
-          %a{:href => "http://confreaks.net/", :target => "_blank"}
-          %a{:href => "http://confreaks.net/"}
-          %a{:href => "http://confreaks.net/"} http://confreaks.net/
+      #rails_accordion
+        .accordion-group
+          .accordion-heading 
+            %p.accordion-toggle{"data-toggle" => "collapse", "data-target" => "#uno", "data-parent" => "#rails_accordion"} Agregators
+          #uno.accordion-body.collapse.in
+            .accordion-inner
+              %ul
+                %li
+                  %a{:href => "http://www.readwriteweb.com/hack/", :target => "_blank"}
+                  %a{:href => "http://www.readwriteweb.com/hack/"}
+                  %a{:href => "http://www.readwriteweb.com/hack/"} http://www.readwriteweb.com/hack/
+                %li
+                  %a{:href => "http://www.rubyflow.com/", :target => "_blank"}
+                  %a{:href => "http://www.rubyflow.com/"}
+                  %a{:href => "http://www.rubyflow.com/"} http://www.rubyflow.com/
+                %li
+                  %a{:href => "http://www.reddit.com/r/ruby/", :target => "_blank"}
+                  %a{:href => "http://www.reddit.com/r/ruby/"}
+                  %a{:href => "http://www.reddit.com/r/ruby/"} http://www.reddit.com/r/ruby/
+                %li
+                  %a{:href => "http://c5nn.carbonfive.com/", :target => "_blank"}
+                  %a{:href => "http://c5nn.carbonfive.com/"}
+                  %a{:href => "http://c5nn.carbonfive.com/"} http://c5nn.carbonfive.com/
+        .accordion-group
+          .accordion-heading
+            %p.accordion-toggle{"data-toggle" => "collapse", "data-target" => "#dos", "data-parent" => "#rails_accordion"} Blogs
+          #dos.accordion-body.collapse
+            .accordion-inner
+              %ul
+                %li
+                  %a{:href => "http://blog.carbonfive.com/", :target => "_blank"}
+                  %a{:href => "http://blog.carbonfive.com/"}
+                  %a{:href => "http://blog.carbonfive.com/"} http://blog.carbonfive.com/
+                %li
+                  %a{:href => "http://avdi.org/devblog/", :target => "_blank"}
+                  %a{:href => "http://avdi.org/devblog/"}
+                  %a{:href => "http://avdi.org/devblog/"} http://avdi.org/devblog/
+                %li
+                  %a{:href => "http://yehudakatz.com/", :target => "_blank"}
+                  %a{:href => "http://yehudakatz.com/"}
+                  %a{:href => "http://yehudakatz.com/"} http://yehudakatz.com/
+                %li
+                  %a{:href => "http://www.igvita.com/", :target => "_blank"}
+                  %a{:href => "http://www.igvita.com/"}
+                  %a{:href => "http://www.igvita.com/"}
+                    http://www.igvita.com/
+                    %span{:style => "color: black;"} (ftw !!!)
+                %li
+                  %a{:href => "http://blog.hasmanythrough.com/", :target => "_blank"}
+                  %a{:href => "http://blog.hasmanythrough.com/"}
+                  %a{:href => "http://blog.hasmanythrough.com/"} http://blog.hasmanythrough.com/
+                %li
+                  %a{:href => "http://www.engineyard.com/blog/", :target => "_blank"}
+                  %a{:href => "http://www.engineyard.com/blog/"}
+                  %a{:href => "http://www.engineyard.com/blog/"} http://www.engineyard.com/blog/
+                %li
+                  %a{:href => "http://robots.thoughtbot.com/", :target => "_blank"}
+                  %a{:href => "http://robots.thoughtbot.com/"}
+                  %a{:href => "http://robots.thoughtbot.com/"} http://robots.thoughtbot.com/
+                %li
+                  %a{:href => "https://github.com/blog", :target => "_blank"}
+                  %a{:href => "https://github.com/blog"}
+                  %a{:href => "https://github.com/blog"} https://github.com/blog
+                %li
+                  %a{:href => "https://makandracards.com/makandra", :target => "_blank"}
+                  %a{:href => "https://makandracards.com/makandra"}
+                  %a{:href => "https://makandracards.com/makandra"} https://makandracards.com/makandra
+                %li
+                  %a{:href => "http://thechangelog.com/", :target => "_blank"}
+                  %a{:href => "http://thechangelog.com/"}
+                  %a{:href => "http://thechangelog.com/"} http://thechangelog.com/
+                %li
+                  %a{:href => "http://confreaks.net/", :target => "_blank"}
+                  %a{:href => "http://confreaks.net/"}
+                  %a{:href => "http://confreaks.net/"} http://confreaks.net/
 
   #php.service.row
     %h2#phptitle PHP - SYMFONY / Magento
-    .span4
-      %h4 Code Sample
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui felis, fermentum et ornare eget, malesuada sed lacus. Maecenas faucibus metus nec elit lobortis eleifend molestie justo eleifend.
+    .span5
+      %h5 Code Sample
+      = raw(draw_code("php.php"))
+      %br/
       = link_to "View code on Github", "#", :class => "btn"
-    .span7
+    .span6
       %p We have some of the top PHP talent in the world. We apreciate the beauty of Symfony and Magento and subspecialize in those frameworks.
       %p We have an opensource ecomerce project we are working on, check out our code samples to see the quality of our work - https://github.com/staunchRobots/Symfony-Groovy-Ecom.
 
@@ -119,28 +129,41 @@
       = link_to "View code on Github", "#", :class => "btn"
     .span7
       %p Our markup stack varies per project but all our developers love elegant markup / JS.
-      %h4 MARKUP:  BLEEDING EDGE HTML / CSS: We like frameworks
-      %ul
-        %li NORMALIZE.CSS, standard
-        %li LIQUID 960 GS, no sweat
-        %li HTML 5 / CSS3, ohh yea.
-        %li HAML / SASS,  we got that.
-      %h4 WE LOVE JS, and KEEP UP WITH LATEST TRENDS
-      %ul
-        %li Jquery,  
-        %li jsCocoa, 
-        %li less.js
-        %li Backbone.js
-      %h4 MOBILE COMPATABILITY
-      %ul
-        %li
-          We offer mediatype styling for specific layouts -
-          %a{:href => "http://www.w3schools.com/css/css_mediatypes.asp"}
-          %a{:href => "http://www.w3schools.com/css/css_mediatypes.asp"} http://www.w3schools.com/css/css_mediatypes.asp
-        %li
-          We have experience writing JS / html 5 to extend mobile device functionality with titatium / appcellerator
-          %a{:href => "http://www.appcelerator.com/"}
-          %a{:href => "http://www.appcelerator.com/"} http://www.appcelerator.com/
+      #front_accordion
+        .accordion-group
+          .accordion-heading 
+            %p.accordion-toggle{"data-toggle" => "collapse", "data-target" => "#one", "data-parent" => "#front_accordion"} Markup: Bleeding edge HTML / CSS: We like frameworks
+          #one.accordion-body.collapse.in
+            .accordion-inner
+              %ul
+                %li NORMALIZE.CSS, standard
+                %li LIQUID 960 GS, no sweat
+                %li HTML 5 / CSS3, ohh yea.
+                %li HAML / SASS,  we got that.
+        .accordion-group
+          .accordion-heading 
+            %p.accordion-toggle{"data-toggle" => "collapse", "data-target" => "#two", "data-parent" => "#front_accordion"} We Love Js, and keep up with latest trends
+          #two.accordion-body.collapse
+            .accordion-inner
+              %ul
+                %li Jquery,  
+                %li jsCocoa, 
+                %li less.js
+                %li Backbone.js
+        .accordion-group
+          .accordion-heading 
+            %p.accordion-toggle{"data-toggle" => "collapse", "data-target" => "#three", "data-parent" => "#front_accordion"} Mobile Compatability 
+          #three.accordion-body.collapse
+            .accordion-inner
+              %ul
+                %li
+                  We offer mediatype styling for specific layouts -
+                  %a{:href => "http://www.w3schools.com/css/css_mediatypes.asp"}
+                  %a{:href => "http://www.w3schools.com/css/css_mediatypes.asp"} http://www.w3schools.com/css/css_mediatypes.asp
+                %li
+                  We have experience writing JS / html 5 to extend mobile device functionality with titatium / appcellerator
+                  %a{:href => "http://www.appcelerator.com/"}
+                  %a{:href => "http://www.appcelerator.com/"} http://www.appcelerator.com/
     
 :javascript
   $(document).ready(function(){
@@ -153,6 +176,8 @@
       $(document).scrollTop(top);
       return false
     });
+    $("#rails_accordion").collapse({parent: true, toggle: true}).height('auto');
+    $("#front_accordion").collapse({parent: true, toggle: true}).height('auto');
 
     // fix sub nav on scroll
     var $win = $(window)
