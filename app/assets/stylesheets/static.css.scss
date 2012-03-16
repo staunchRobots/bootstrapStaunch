@@ -1,4 +1,6 @@
 @import "compass";
+@import "compass/css3";
+@import "compass/css3/box-shadow";
 .header { text-align: center;
     h1 {font-size: 38px; text-align: center; margin-top: 20px; margin-bottom: 15px;}
     .desc {font-size: 20px; }
@@ -167,7 +169,18 @@
 }
 
 #portfolio {
+  margin-top: 70px; margin-left: auto; margin-right: auto;
+  @include single-box-shadow (rgba(0, 0, 0, 0.5), 1px, 2px, 3px, 4px, inset);
+  .row {margin-bottom: 40px; margin-top: 20px; margin-left: auto; margin-right: auto;}
   .item { 
+      padding: 10px;
+      @include border-radius(5px);
+      -moz-box-shadow: 0 0 5px #888;
+      -webkit-box-shadow: 0 0 5px#888;
+      box-shadow: 0 0 5px #888;
+      border: 1px solid #505050i;
+      .carousel-inner { text-align: center; }
+
   }
 
 }

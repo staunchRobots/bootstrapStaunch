@@ -1,10 +1,107 @@
 #services-title
-  %h1.jumbotron StaunchRobot Contraptions
-
-= render :partial => "item"
+  %h1.jumbotron StaunchRobots Contraptions
 
 #portfolio
   .row
-    .span6.item
+    .span5.item
+      %h1 Contract 1
+      %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+      .carousel
+        / Carousel items
+        .carousel-inner
+          .active.item
+            %img{:alt => "Kippt", :src => "assets/example-1.png"}
+          .item
+            %img{:alt => "Fleetio", :src => "assets/example-2.png"}
+          .item
+            %img{:alt => "JS Hint", :src => "assets/example-3.png"}
+        / Carousel nav
+        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+      
+    .span5.item
+      %h1 Contract 2
+      %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+      .carousel
+        / Carousel items
+        .carousel-inner
+          .active.item
+            %img{:alt => "Kippt", :src => "assets/example-1.png"}
+          .item
+            %img{:alt => "Fleetio", :src => "assets/example-2.png"}
+          .item
+            %img{:alt => "JS Hint", :src => "assets/example-3.png"}
+        / Carousel nav
+        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+  .row
+    .span5.item
+      %h1 Contract 3
+      %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+      .carousel
+        / Carousel items
+        .carousel-inner
+          .active.item
+            %img{:alt => "Kippt", :src => "assets/example-1.png"}
+          .item
+            %img{:alt => "Fleetio", :src => "assets/example-2.png"}
+          .item
+            %img{:alt => "JS Hint", :src => "assets/example-3.png"}
+        / Carousel nav
+        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+    .span5.item
+      %h1 Contract 4
+      %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+      .carousel
+        / Carousel items
+        .carousel-inner
+          .active.item
+            %img{:alt => "Kippt", :src => "assets/example-1.png"}
+          .item
+            %img{:alt => "Fleetio", :src => "assets/example-2.png"}
+          .item
+            %img{:alt => "JS Hint", :src => "assets/example-3.png"}
+        / Carousel nav
+        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+  .row
+    .span5.item
+      %h1 Contract 5
+      %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+      .carousel
+        / Carousel items
+        .carousel-inner
+          .active.item
+            %img{:alt => "Kippt", :src => "assets/example-1.png"}
+          .item
+            %img{:alt => "Fleetio", :src => "assets/example-2.png"}
+          .item
+            %img{:alt => "JS Hint", :src => "assets/example-3.png"}
+        / Carousel nav
+        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+    .span5.item
+      %h1 Contract 6
+      %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+      .carousel
+        / Carousel items
+        .carousel-inner
+          .active.item
+            %img{:alt => "Kippt", :src => "assets/example-1.png"}
+          .item
+            %img{:alt => "Fleetio", :src => "assets/example-2.png"}
+          .item
+            %img{:alt => "JS Hint", :src => "assets/example-3.png"}
+        / Carousel nav
+        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
 
-    .span6.item
+:javascript
+  $(".carousel").carousel({interval: 5000}).carousel('cycle');
+  $(".carousel a.left").click(function(){
+      $(this).parent().carousel('prev')
+  });
+  $(".carousel a.next").click(function(){
+      $(this).parent().carousel('next')
+  });

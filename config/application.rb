@@ -1,7 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-
+require "sass-rails"
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
@@ -38,5 +38,9 @@ module Stauchrobots
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.sass.load_paths ||= []
+    config.sass.load_paths << "#{Rails.root}/app/assets/stylesheets"
+    config.sass.load_paths << "#{Gem.loaded_specs['compass'].full_gem_path}/frameworks/compass/stylesheets"
+    
   end
 end
