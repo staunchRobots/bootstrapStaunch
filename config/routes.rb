@@ -4,6 +4,7 @@ Stauchrobots::Application.routes.draw do
   root :to => 'static#index'
   match "/services" => "static#services", :as => "services"
   match "/internal_projects" => "static#internal_projects", :as => "internal_projects"
+  match "/portfolio" => "static#portfolio", :as => "portfolio"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

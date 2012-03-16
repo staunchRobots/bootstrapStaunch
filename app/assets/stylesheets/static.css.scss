@@ -1,3 +1,4 @@
+@import "compass";
 .header { text-align: center;
     h1 {font-size: 38px; text-align: center; margin-top: 20px; margin-bottom: 15px;}
     .desc {font-size: 20px; }
@@ -165,3 +166,8 @@
   }
 }
 
+#portfolio {
+  .item { 
+  }
+
+}

@@ -118,7 +118,7 @@ PLATFORMS
 DEPENDENCIES
   coderay
   coffee-rails (~> 3.2.2)
-  compass-rails (~> 1.0.0.rc.3)
+  compass-rails (~> 1.0.0)
   haml
   jquery-rails
   pg
